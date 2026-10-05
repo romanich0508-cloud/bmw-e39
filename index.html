@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="uk">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW E39 — Ultimate Edition</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('https://i.ibb.co/tgjbsfD/images-1.jpg'); /*[cite: 6] */
+            background-repeat: no-repeat; 
+            background-size: cover; 
+            background-position: center;
+            background-attachment: fixed; 
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #e0e0e0;
+        }
+        
+        /* Навігація в стилі Neon Glass */
+        nav {
+            background: rgba(15, 15, 15, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 14px 24px;
+            border-radius: 12px;
+            margin: 0 auto 30px auto;
+            max-width: 950px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        .nav-links a {
+            color: #aaa;
+            text-decoration: none;
+            font-weight: 600;
+            margin-left: 10px;
+            padding: 8px 16px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: #fff;
+            background: #0066cc;
+            box-shadow: 0 0 15px rgba(0, 102, 204, 0.6);
+        }
+
+        .brand-logo {
+            font-weight: 900;
+            letter-spacing: 2px;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255,255,255,0.5);
+        }
+
+        .main-container {
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        /* Блоки з ефектом Glassmorphism (Матове скло) */
+        .glass-card {
+            background: rgba(18, 18, 20, 0.75);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(0, 102, 204, 0.4);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: #fff;
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            background: linear-gradient(90deg, #fff, #0066cc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Фото з ефектом підсвітки */
+        .car-img {
+            width: 100%;
+            max-width: 500px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 102, 204, 0.3);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .car-img:hover {
+            transform: scale(1.04);
+            box-shadow: 0 0 35px rgba(0, 102, 204, 0.6);
+        }
+
+        /* Інтерактивні картки для списків */
+        .grid-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .grid-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 15px;
+            border-radius: 10px;
+            transition: background 0.3s;
+        }
+
+        .grid-item:hover {
+            background: rgba(0, 102, 204, 0.15);
+        }
+
+        .block-style {
+            background: linear-gradient(90deg, rgba(40, 167, 69, 0.2), transparent);
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
+
+        blockquote {
+            background: rgba(0, 102, 204, 0.1);
+            border-left: 4px solid #0066cc;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+        }
+
+        .inline-style {
+            background: #0066cc;
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="brand-logo">BMW ///M POWER</div>
+        <div class="nav-links">
+            <a href="#" class="active">Лаба №1</a>
+            <a href="lab2.html">Лаба №2</a>
+        </div>
+    </nav>
+
+    <div class="main-container">
+
+        <div class="glass-card" style="text-align: center;">
+            <h1>BMW 5 Series Sedan (E39)</h1>
+            <h2>Тема: Огляд культового седана 4-го покоління</h2>
+            <p>BMW E39 — це четверте покоління автомобілів 5-ї серії німецького автоконцерну BMW, що випускалося з 1995 по 2004 рік. Цей кузов став справжньою класикою завдяки чудовому балансу між комфортом, керованістю та дизайном.</p>
+        </div>
+
+        <div class="glass-card">
+            <h3>Двигуни та Легендарна M5</h3>
+            <p>Серія E39 оснащувалася широкою лінійкою двигунів — від надійних 6-циліндрових M52/M54 (2.0–3.0 л) до потужних V8 M62 у версіях 535i та 540i.</p>
+            <p>Флагманом лінійки стала <strong>BMW M5</strong>, оснащена 4.9-літровим атмосферним двигуном S62 V8 потужністю 400 к.с. та 6-ступінчастою коробкою передач.</p>
+        </div>
+
+        <div class="glass-card" style="text-align: center;">
+            <h3>Галерея & Підвіска</h3>
+            <p>E39 стала першою «п'ятіркою», у якій деталі підвіски майже повністю виготовлялися з алюмінієвого сплаву.</p>
+            
+            <img src="https://i.ibb.co/q2yn2GK/original-1.png" alt="BMW E39 Sedan" class="car-img"> 
+        </div>
+
+        <div class="glass-card">
+            <h3>Топ модифікацій та оснащення</h3>
+            
+            <div class="grid-list">
+                <div class="grid-item">
+                    <h4>🔥 Модифікації</h4>
+                    <ol>
+                        <li>BMW 528i / 530i</li>
+                        <li>BMW 530d (M57)</li>
+                        <li>BMW M5 (400 к.с.)</li>
+                    </ol>
+                </div>
+                <div class="grid-item">
+                    <h4>⚡ Комплектація</h4>
+                    <ul>
+                        <li>Шкіряний салон</li>
+                        <li>Angel Eyes (з 2000 р.)</li>
+                        <li>Двозонний клімат</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card">
+            <h2>Додатково</h2>
+            <p>
+                Детальніше: <a href="https://uk.wikipedia.org/wiki/BMW_5_Серія_(E39)" target="_blank" style="color: #0066cc;">BMW E39 на Вікіпедії</a>.
+            </p>
+
+            <div class="block-style">
+                <strong>Кузов BMW E39 виготовлявся із високоміцної сталі, а підвіска — з алюмінію.</strong>
+            </div>
+
+            <blockquote>
+                «BMW E39 вважається одним із найкращих седанів бізнес-класу свого часу.»
+            </blockquote>
+
+            <p>
+                Двигуни <span class="inline-style">M52</span> та <span class="inline-style">M54</span> стали еталоном надійності.
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 BMW E39 Interactive Showcase | ЗУНУ
+    </footer>
+
+</body>
+</html>
